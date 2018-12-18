@@ -1,0 +1,71 @@
+<div class="page-body">
+  <app-return-header message={{message}}></app-return-header>
+  <div class="page-content">
+    <div  *ngIf="book.image">
+        <div class="img" *ngIf="book.image"> <img [src]="book.image" alt=""></div>
+        <div class="name">
+          <h3>{{book.name}}</h3>
+        </div>
+        <div class="info">
+          <div class="box">
+            <div class="left">作者：</div>
+            <span>{{book.author}}</span>
+          </div>
+          <div class="box">
+            <div class="left">出版社：</div>
+            <span>{{book.publisher.name}}</span>
+          </div>
+          <div class="box">
+            <div class="left">图书类别：</div>
+            <span>{{book.category.name}}</span>
+          </div>
+          <div class="box">
+            <div class="left">价格：</div>
+            <span>{{book.price | currency:"￥"}}</span>
+          </div>
+        </div>
+        <div class="name">
+          <h3>简介</h3>
+        </div>
+    </div>
+    <div  *ngIf="!book.image">
+        <div class="img"> <img [src]="list.Book.Image" alt=""></div>
+        <div class="name">
+          <h3>{{list.Book.Name}}</h3>
+        </div>
+        <div class="info">
+          <div class="box">
+            <div class="left">作者：</div>
+            <span>{{list.Book.Author.Name}}</span>
+          </div>
+          <div class="box">
+            <div class="left">出版社：</div>
+            <span>{{list.Book.Publisher.Name}}</span>
+          </div>
+          <div class="box">
+            <div class="left">图书类别：</div>
+            <span>{{list.Book.Category.Name}}</span>
+          </div>
+          <div class="box">
+            <div class="left">出版时间：</div>
+            <span>{{list.Book.PublishDate}}</span>
+          </div>
+          <div class="box">
+            <div class="left">数量：</div>
+            <span>{{list.Book.Amount}}</span>
+          </div>
+          <div class="box">
+            <div class="left">价格：</div>
+            <span>{{ 58 | currency:"￥"}}</span>
+          </div>
+        </div>
+        <div class="name">
+          <h3>简介</h3>
+          <div class="introduce">
+            {{list.Book.Introduce}}
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<app-bottom-cart></app-bottom-cart>

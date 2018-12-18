@@ -1,0 +1,6 @@
+<div class="home-item-list">
+  <div class="home-item-img" *ngFor="let item of lists" (click)="getBookInfo(item)" [routerLink]="[ '/detail',item.Book.ISBN]">
+    <img [src]="item.Book.Image" alt="" >
+    <p>{{item.Book.Name | homeBook}}</p>
+  </div>
+</div>

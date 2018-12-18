@@ -1,0 +1,26 @@
+<div class="page-body">
+  <app-return-header message={{message}}></app-return-header>
+  <div class="page-content">
+    <form action="" #form="ngForm" (submit)="submitForm(form)">
+      <div class="load-input">
+        <label for="" class="input-label">用 户 名 :</label>
+        <input type="text" class="inputBox" name="userName" ngModel #userName="ngModel" require pattern="[a-zA-Z][a-zA-Z0-9]{5,15}">
+        <div class="promptBox" *ngIf="userName.errors?.required && userName.touched">用户名不能为空</div>
+        <div class="promptBox" *ngIf="userName.errors?.pattern">用户名以字母开头,长度为6-16位</div>
+      </div>
+      <div class="load-input">
+        <label for="" class="input-label">密 &nbsp; &nbsp; 码 :</label>
+        <input type="text" class="inputBox" name="userPwd" ngModel #userPwd="ngModel" required pattern="\w{6,12}">
+        <div class="promptBox" *ngIf="userPwd.errors?.required && userPwd.touched">密码不能为空</div>
+        <div class="promptBox" *ngIf="userPwd.errors?.pattern">密码为6-12位的非空白字符</div>
+      </div>
+      <div class="load-input button">
+        <button class="activeClick" [disabled]="form.invalid" (click)="btn_onclick()">登 录</button> &nbsp; &nbsp;
+        <button (click)="btn_cancel()">取 消</button>
+      </div>
+    </form>
+    <div  class="load-input text-right">
+      没有账号<button class="register" [routerLink]="[ '/register']">注册</button>
+    </div>
+  </div>
+</div>

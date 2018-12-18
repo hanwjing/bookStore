@@ -1,0 +1,54 @@
+.listBook{
+    height: 100%;
+
+}
+.list-item{
+    position: relative;
+    display: flex;
+    height:20vh;
+    flex-direction:row;
+    padding:6px;
+    border:1px solid #BBB;
+    box-shadow: 2px 2px 3px #ccc;
+    border-radius: 7px;
+    margin:0 10px 15px;
+}
+.list-item .list-img{
+    display: block;
+    flex:2;
+}
+.list-item .list-img img{
+    height:16vh;
+    line-height:20vh;
+}
+.list-item .list-body{
+    flex:3;
+}
+.list-item .list-body strong{
+    color:#F10215;
+}
+.list-item .list-addCart{
+    position: absolute;
+    right:6px;
+    bottom:10px;
+    width:27vw;
+    height:5vh;
+    line-height:5vh;
+    color: #fff;
+    text-align: center;
+    background-color:#F10215 ;
+    border-radius: 7px;
+}
+.getButton{
+    height: 8vh;
+    line-height: 8vh;
+    text-align: center;
+}
+.getButton>button{
+    width: 45vw;
+    height: 5vh;
+    line-height: 5vh;
+    color: #fff;
+    border:none;
+    background-color: #007ACC;
+}

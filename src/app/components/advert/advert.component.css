@@ -1,0 +1,10 @@
+.slider-pic{
+    height: 50vw;
+    background-color: #ccc;
+    position: relative;
+}
+img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}

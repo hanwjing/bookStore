@@ -1,0 +1,6 @@
+<div class="homeSection" *ngFor="let item of list">
+  <div class="home-item-title">
+    <h3>{{item.Name}}</h3>
+  </div>
+  <app-section-book-list [lists]="item.Books"></app-section-book-list>
+</div>

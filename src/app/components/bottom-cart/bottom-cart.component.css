@@ -1,0 +1,9 @@
+.navBottom>.bottomAdd{
+    flex: 1;
+    border-top: 1px solid red;
+    line-height: 8vh;
+}
+.navBottom>.bottomAdd.bottomColor{
+    background-color: red;
+    color:#fff;
+}

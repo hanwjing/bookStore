@@ -1,0 +1,10 @@
+.homeSection .home-item-title{
+    overflow: hidden;
+    height:8vh;
+    background-color: #efefef;
+}
+.homeSection .home-item-title h3{
+    margin:15px;
+    padding:2px 15px;
+    border-left:3px solid #F10215;
+}

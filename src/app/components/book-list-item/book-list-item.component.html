@@ -1,0 +1,17 @@
+<div class="listBook">
+  <div class="list-item" *ngFor="let item of list">
+    <div class="list-img">
+      <img [src]="item.image" alt="" [routerLink]="[ '/detail', item.id]">
+    </div>
+    <div class="list-body">
+      <h4>{{item.name}}</h4>
+      <p>{{item.publisher.name}}</p>
+      <p>{{item.category.name}}</p>
+      <strong>{{item.price | currency :"￥"}}</strong>
+    </div>
+    <div class="list-addCart" (click)="addCart()">加入购物车</div>
+  </div>
+  <div class="getButton">
+    <button class="button" (click)="getMoreInfo()">获取更多图书信息...</button>
+  </div>
+</div>

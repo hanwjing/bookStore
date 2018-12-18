@@ -1,0 +1,114 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+div,ul,li{
+    box-sizing: border-box;
+}
+
+.page-body{
+    height: 92vh;
+    box-sizing: border-box;
+}
+.page-head{
+    height: 8vh;
+    font-size: 18px;
+    line-height: 8vh;
+    background-color: red;
+    color:#fff;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.page-content{
+    position: relative;
+    height: 84vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+
+.navBottom{
+    display: flex;
+    background-color: #f5f5f5;
+    height: 8vh;
+    border:1px solid #ccc;
+    z-index: 999;
+}
+.navBottom>div{
+    flex:1;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3vh;
+    color:#333;
+    outline:none !important;
+}
+.navBottom>div>i{
+    flex:1;
+    margin-top: 3px;
+}
+.navBottom>div.active{
+    color:red;
+}
+
+a{
+    text-decoration: none;
+    color:#123;
+}
+
+
+
+/* 登录页面和注册页面 */
+form{
+    padding: 20px;
+}
+ .load-input{
+    padding: 10px 0;
+}
+ .load-input.button{
+    text-align: center;
+}
+ .load-input.text-right{
+    text-align: right;
+    padding-right: 15px;
+}
+form .load-input .input-label{
+    display: inline-block;
+    width: 22vw;
+}
+form .load-input .inputBox{
+    width: 60vw;
+    height: 5vh;
+    outline: none;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
+.load-input button{
+    width: 15vw;
+    height: 6vh;
+    background-color: #ccc;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+}
+form .load-input .promptBox{
+    padding-left: 70px;
+    color:red;
+}
+form .load-input button.activeClick{
+    background-color: red;
+    color:#fff;
+}
+ .load-input .register{
+    height: 4vh;
+}

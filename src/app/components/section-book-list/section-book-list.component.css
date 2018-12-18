@@ -1,0 +1,19 @@
+.home-item-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.home-item-img{
+    flex: 1;
+    width: 50vw;
+    height: 26vh;
+    text-align: center;
+    padding-top: 10px;
+    outline: none;
+}
+.home-item-list img{
+    width: 35vw;
+}
+.home-item-list p{
+    color:red;
+}
